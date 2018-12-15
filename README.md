@@ -77,8 +77,10 @@ Within R console
  * Output plots:
  	<table>
  		<tr>
- 			<img src="figures/linear_train.png" alt="linear_train.png"/>
- 			<img src="figures/linear_test.png" alt="linear_test.png"/>
+ 			<td>
+	 			<img src="figures/linear_train.png" width=40% alt="linear_train.png"/>
+	 			<img src="figures/linear_test.png" width=40% alt="linear_test.png"/>
+	 		</td>
  		</tr>
  	</table>
  * Command: res=smo615('data/circle_train_data.txt', 'data/circle_train_label.txt', 'data/circle_test_data.txt', 'data/circle_test_label.txt', 1, 1)
