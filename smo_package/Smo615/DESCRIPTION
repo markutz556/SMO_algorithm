@@ -1,0 +1,17 @@
+Package: Smo615
+Type: Package
+Title: 2D Visualization of SVM using the SMO algorithm
+Version: 1.0
+Date: 2018-12-13
+Author: Rui Ma, Shaocheng Wu, Mingyu Du
+Maintainer: Biostat 615 <biostat615@umich.edu>
+Description: We implement a support vector classifier using SMO algorithm in C++ and 
+    compile it into this R package. It seeks to find a decision boundary with the greatest 
+    margin of separation between the input classes. If the training data are not linearly 
+    separable, a "soft-margin" (or regularized) version can be implemented that allows for 
+    misclassified samples. The output decision boundary can be linear, as it is with 
+    logisitic regression, or non-linear with the use of various kernels that map the input         
+    features to a higher-dimensional space.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.16)
+LinkingTo: Rcpp

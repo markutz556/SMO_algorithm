@@ -1,0 +1,75 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8,latin1]{inputenc}
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `Smo615'}}
+\par\bigskip{\large \today}
+\end{center}
+\begin{description}
+\raggedright{}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{2D Visualization of SVM using the SMO algorithm}
+\item[Version]\AsIs{1.0}
+\item[Date]\AsIs{2018-12-13}
+\item[Author]\AsIs{Rui Ma, Shaocheng Wu, Mingyu Du}
+\item[Maintainer]\AsIs{Biostat 615 }\email{biostat615@umich.edu}\AsIs{}
+\item[Description]\AsIs{We implement a support vector classifier using SMO algorithm in C++ and
+compile it into this R package. It seeks to find a decision boundary with the greatest
+margin of separation between the input classes. If the training data are not linearly
+separable, a ``soft-margin'' (or regularized) version can be implemented that allows for
+misclassified samples. The output decision boundary can be linear, as it is with
+logisitic regression, or non-linear with the use of various kernels that map the input
+features to a higher-dimensional space.}
+\item[License]\AsIs{GPL (>= 2)}
+\item[Imports]\AsIs{Rcpp (>= 0.12.16)}
+\item[LinkingTo]\AsIs{Rcpp}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{Smo615-package}{2D Visualization of SVM using the SMO algorithm}{Smo615.Rdash.package}
+\aliasA{Smo615}{Smo615-package}{Smo615}
+\keyword{SMO; SVM}{Smo615-package}
+%
+\begin{Description}\relax
+We implement a support vector classifier using SMO algorithm in C++ and compile it into this R package. It seeks to find a decision boundary with the greatest margin of separation between the input classes. If the training data are not linearly separable, a "soft-margin" (or regularized) version can be implemented that allows for misclassified samples. The output decision boundary can be linear, as it is with logisitc regression, or non-linear with the use of various kernels that map the input features to a higher-dimensional space.
+\end{Description}
+%
+\begin{Details}\relax
+We define a linear kernel and a Gaussian (also known as radial basis function or RBF) kernel. There are three main steps to train our model: take\_step(), examine\_example(), and train(). The train() function implements selection of the first α to optimize via the first choice heuristic and passes this value to examine\_example(). Then examine\_example() implements the second choice heuristic to choose the second α
+to optimize, and passes the index of both α values to take\_step(). Finally take\_step() carries out the meat of the calculations and computes the two new α values, a new threshold b, and updates the error cache. The train() function uses a while loop to iterate through the α values in a few different ways until no more optimizations can be made, at which point it returns the optimized α vector. With all the trained parameters, we conduct the predictions of the testing data and also plot the decision boundary for both the training data and testing data.
+\end{Details}
+%
+\begin{Author}\relax
+Rui Ma, Shaocheng Wu, Mingyu Du
+
+Maintainer: Biostat 615 <@umich.edu>
+\end{Author}
+%
+\begin{References}\relax
+1.Platt, J.: Sequential Minimal Optimization: A Fast Algorithm for Training Support Vector Machine. Technical Report MSR-TR-98-14. Microsoft research (1998).
+2.Jon Charest: https://jonchar.net/notebooks/SVM/.
+3.Wikipedia contributors. Support Vector Machine. Wikipedia, The Free Encyclopedia. Available at:https://en.wikipedia.org/wiki/Support\_vector\_machine. Accessed December 1, 2018.
+\end{References}
+%
+\begin{SeeAlso}\relax
+Optional links to other man pages
+\end{SeeAlso}
+%
+\begin{Examples}
+\begin{ExampleCode}
+  ## Not run: 
+     ## Example
+     library(Smo615)
+     res=smo615(train_data_path, train_label_path, test_data_path, test_label_path, C_regularization, linear_kernel(0) /Gaussian_kernel(1))
+  
+## End(Not run)
+\end{ExampleCode}
+\end{Examples}
+\printindex{}
+\end{document}

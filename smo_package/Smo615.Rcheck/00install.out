@@ -1,0 +1,14 @@
+* installing *source* package ‘Smo615’ ...
+Warning in as.POSIXlt.POSIXct(x, tz) :
+  unknown timezone 'zone/tz/2018g.1.0/zoneinfo/America/Detroit'
+** libs
+make: Nothing to be done for `all'.
+make: `symbols.rds' is up to date.
+installing to /Users/markutz556/umichbioinf/Fall2018/Biostat615/project/smo_package/Smo615.Rcheck/Smo615/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (Smo615)
