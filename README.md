@@ -85,8 +85,8 @@ Within R console
  * Output plots:
  	<table>
  		<tr>
- 			<img src="figures/gaussian_train.png" width=100px alt="gaussian_train.png"/>
- 			<img src="figures/gaussian_test.png" width=100px alt="gaussian_test.png"/>
+ 			<img src="figures/gaussian_train.png" width=50% alt="gaussian_train.png"/>
+ 			<img src="figures/gaussian_test.png" width=50% alt="gaussian_test.png"/>
  		</tr>
  	</table>
 
