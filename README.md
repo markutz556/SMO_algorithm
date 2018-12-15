@@ -85,8 +85,8 @@ Within R console
  * Output plots:
  	<table>
  		<tr>
- 			<img src="figures/gaussian_train.png" alt="gaussian_train.png"/>
- 			<img src="figures/gaussian_test.png" alt="gaussian_test.png"/>
+ 			<img src="figures/gaussian_train.png" width=100px alt="gaussian_train.png"/>
+ 			<img src="figures/gaussian_test.png" width=100px alt="gaussian_test.png"/>
  		</tr>
  	</table>
 
@@ -94,9 +94,9 @@ Within R console
  * BIOSTAT 615 Teaching Team
 
 ## Reference
- * 1. Platt, J.: Sequential Minimal Optimization: A Fast Algorithm for Training Support Vector Machine. Technical Report MSR-TR-98-14. Microsoft research (1998).
- * 2. Wikipedia contributors. Support Vector Machine. Wikipedia, The Free Encyclopedia. Available at: https://en.wikipedia.org/wiki/Support_vector_machine. Accessed December 1, 2018.
- * 3. Charest, J. (n.d.). Implementing a Support Vector Machine using Sequential Minimal Optimization and Python 3.5. Retrieved from https://jonchar.net/notebooks/SVM/.
+ * Platt, J.: Sequential Minimal Optimization: A Fast Algorithm for Training Support Vector Machine. Technical Report MSR-TR-98-14. Microsoft research (1998).
+ * Wikipedia contributors. Support Vector Machine. Wikipedia, The Free Encyclopedia. Available at: https://en.wikipedia.org/wiki/Support_vector_machine. Accessed December 1, 2018.
+ * Charest, J. (n.d.). Implementing a Support Vector Machine using Sequential Minimal Optimization and Python 3.5. Retrieved from https://jonchar.net/notebooks/SVM/.
 
 
 
